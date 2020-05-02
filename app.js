@@ -50,7 +50,9 @@ app.get('/year', function(req, res, next){
     /* res.send(`You were born in ${birthYear}`); */
     res.render('year', {
         pageTitle:'Forget what year you were born?',
+        userAge: 'If you are ' + age + ' years old...',
         greeting: 'You were born in ' + birthYear
+
     })
 })
 
